@@ -117,11 +117,12 @@ namespace InClass
             }
         }
         // TODO 6: CreatedDate (Get-Only)
+        private DateTime createdDate = DateTime.Now;
         public DateTime CreatedDate;
         // Constructor
         public UserAccount()
         {
-            CreatedDate = DateTime.Now;
+            CreatedDate = createdDate;
         }
     }
 }
