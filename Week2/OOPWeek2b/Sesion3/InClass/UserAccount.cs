@@ -105,24 +105,22 @@ namespace InClass
         }
 
         // TODO 5: IsVIP (Computed Read-Only)        
-        public bool IsVIP()
+        public bool IsVIP
         {
-            if (balance >= 10000)
-            {
-                return true;
-            }
-            else
-            {
-               return false;
+           get
+            { 
+                if (balance>=100000) return true;
+                else return false; 
             }
         }
         // TODO 6: CreatedDate (Get-Only)
-        private DateTime createdDate = DateTime.Now;
+        private DateTime createddate=DateTime.Now;
         public DateTime CreatedDate;
+
         // Constructor
         public UserAccount()
         {
-            CreatedDate = createdDate;
+            this.CreatedDate = createddate;
         }
     }
 }

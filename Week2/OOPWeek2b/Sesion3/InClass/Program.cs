@@ -34,11 +34,11 @@ class Program
         Console.WriteLine($"Current Balance after invalid attempt: {user.Balance:C}");
 
         // 4. Test Computed Read-Only Property (IsVIP)
-        Console.WriteLine("Is VIP?" +user.IsVIP() ); // Should be false ($5000 < $10000)
+        Console.WriteLine("Is VIP?" +user.IsVIP ); // Should be false ($5000 < $10000)
 
         user.Balance = 15000m;
         Console.WriteLine($"Updated Balance: {user.Balance:C}");
-        Console.WriteLine("Is VIP now?"+ user.IsVIP()); // Should be true ($15000 >= $10000)
+        Console.WriteLine("Is VIP now?"+ user.IsVIP); // Should be true ($15000 >= $10000)
     }
 }
 
