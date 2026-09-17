@@ -1,0 +1,15 @@
+﻿Mô tả đối tượng: Khái niệm->thiết kế->Cài đặt
+1. Liệt kê các tính chất khả dĩ trong 1 ngữ cảnh xác định. Xác định kiểu dữ liệu của các tính chất. 
+2. TỪ các tính chất->tạo các trạng thái của đối tượng (attributes/data fields).
+3. State -> tạo các properties 
+	Chú ý: 
+		+ ràng buộc của thuộc tính
+		+ Read/Write only
+4. Thuộc tính khoá(hashCode/equals) phân biệt đối tượng lẫn nhau.
+5. Xây dựng các hàm khởi tạo (constructor)
+	a. Overload: Trong 1 class có nhiều phương thức cùng tên, khác signature( tham số, kiểu tham số, thứ tự tham số)
+6. Xây dựng các hành vi(operations) nếu có. Tuân thủ Single Responsibility Principle (Một lớp chỉ mô tả/ thực hiện một trách nhiệm duy nhất)
+7. Viết hàm mô tả dạng chuỗi cho đối tượng (phương thức toString()).
+ 
+			NGUYÊN TẮC NÀY SẼ KHÁC TRONG NGỮ CẢNH KHÁC NHAU
+	
