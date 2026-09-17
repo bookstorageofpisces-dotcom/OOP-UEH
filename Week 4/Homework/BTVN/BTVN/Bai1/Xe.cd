@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BTVN.Bai1.Xe">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAABAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Bai1\Xe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai1.NgoaiThanh">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Bai1\NgoaiThanh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai1.NoiThanh">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Bai1\NoiThanh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

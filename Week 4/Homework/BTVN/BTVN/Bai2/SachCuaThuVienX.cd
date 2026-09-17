@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BTVN.Bai2.Sach">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAIAYAAAAAAAAAAAAAAAACAAAAAAAAAgAQAA=</HashCode>
+      <FileName>Bai2\Sach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai2.SachGiaoKhoa">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bai2\SachGiaoKhoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai2.SachThamKhao">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bai2\SachThamKhao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
