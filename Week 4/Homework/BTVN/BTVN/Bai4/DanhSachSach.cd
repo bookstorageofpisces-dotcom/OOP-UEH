@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BTVN.Bai4.Sach">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgiAgAAEAAEYCAAAAAAABAAAIgAAAAAAAACAAAAgECA=</HashCode>
+      <FileName>Bai4\Sach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai4.SachGiaoKhoa">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEQABAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Bai4\SachGiaoKhoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai4.SachThamKhao">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAgAAAAAAAAgAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Bai4\SachThamKhao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai4.DanhSachSach">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAICAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bai4\DanhSachSach.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="danhSach" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
