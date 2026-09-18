@@ -24,20 +24,23 @@ namespace BTVN.Bai2
             string tenNXB = Console.ReadLine();
             foreach (Sach sach in List)
             {
-                if (sach is SachGiaoKhoa && sach.NXB == tenNXB)
+                if (sach is SachGiaoKhoa && sach.GetNXB() == tenNXB)
                 {
-                    Console.WriteLine($"Mã sách: {sach.MaSach}, Ngày nhập: {sach.NgayNhap}, Đơn giá: {sach.DonGia}, Số lượng: {sach.SoLuong}, Nhà xuất bản: {sach.NXB}");
+                    Console.WriteLine(sach.GetInfor());
                 }
             }
             //Tìm thành tiền cao nhất.
             double Max = 0;
+            string MaxSach = "";
             foreach (Sach sach in List)
             {
                 if (sach.TinhThanhTien() > Max)
                 {
+                    MaxSach = sach.GetInfor();
                     Max = sach.TinhThanhTien();
                 }
             }
+            Console.WriteLine("Sách có thành tiền cao nhất là: " + MaxSach);
             Console.WriteLine("Thành tiền cao nhất là: " + Max);
         }
     }

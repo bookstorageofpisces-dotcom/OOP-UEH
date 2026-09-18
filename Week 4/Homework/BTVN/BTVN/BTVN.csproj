@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>BTVN.Bai2.Program</StartupObject>
+    <StartupObject>BTVN.Bai3.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
