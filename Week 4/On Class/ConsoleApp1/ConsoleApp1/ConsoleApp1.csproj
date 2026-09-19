@@ -5,13 +5,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>BTVN.Bai5.Program</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Bai1\NewFolder\**" />
-    <EmbeddedResource Remove="Bai1\NewFolder\**" />
-    <None Remove="Bai1\NewFolder\**" />
-  </ItemGroup>
 
 </Project>
