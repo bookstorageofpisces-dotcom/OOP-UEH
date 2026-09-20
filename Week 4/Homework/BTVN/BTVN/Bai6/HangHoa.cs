@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BTVN.Bai6
 {
-    internal abstract class HangHoa
+    public abstract class HangHoa
     {
         protected string _maHang;
         protected string Mahang
@@ -65,7 +65,7 @@ namespace BTVN.Bai6
             this.Dongia = dongia;
             this.Soluongton = soluongton;
         }
-        protected abstract string mucdobanbuon();
+        public abstract string mucdobanbuon();
         protected abstract double VAT();
         public override bool Equals(object obj)
         {
@@ -78,6 +78,31 @@ namespace BTVN.Bai6
         public override int GetHashCode()
         {
             return this.Mahang.GetHashCode();
+        }
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine("Thông tin hàng hoá:");
+            Console.WriteLine($"Mã hàng: {this.Mahang}");
+            Console.WriteLine($"Tên hàng: {this.Tenhang}");
+            Console.WriteLine($"Đơn giá: {this.Dongia}");
+            Console.WriteLine($"Số lượng tồn: {this.Soluongton}");
+        }
+        public string GetMahang()
+        {
+            return this.Mahang;
+        }
+        public string GetTenhang()
+        {
+            return this.Tenhang;
+        }
+        public double GetHangTon()
+        {
+            return this.Soluongton;
+        }
+        public bool SetDongia(double dongia)
+        {
+            this.Dongia = dongia;
+            return true;
         }
     }
 }

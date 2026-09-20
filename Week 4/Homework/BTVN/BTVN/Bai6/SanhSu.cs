@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BTVN.Bai6
 {
-    internal class SanhSu : HangHoa
+    public class SanhSu : HangHoa
     {
         private string _nhasanxuat;
         private DateTime _ngaynhapkho;
@@ -31,7 +31,7 @@ namespace BTVN.Bai6
             this._nhasanxuat = nhasanxuat;
             this.Ngaynhapkho = ngaynhapkho;
         }
-        protected override string mucdobanbuon()
+        public override string mucdobanbuon()
         {
             if (this.Soluongton>50 && this.Ngaynhapkho.AddDays(10)<DateTime.Now)
             {
@@ -45,6 +45,14 @@ namespace BTVN.Bai6
         protected override double VAT()
         {
             return 0.1;
+        }
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Nhà sản xuất: {this._nhasanxuat}");
+            Console.WriteLine($"Ngày nhập kho: {this.Ngaynhapkho.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Mức độ bán buôn: {this.mucdobanbuon()}");
+            Console.WriteLine($"VAT: {this.VAT()*100}%");
         }
     }
 }

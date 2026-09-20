@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BTVN.Bai6
 {
-    internal class ThucPham : HangHoa
+    public class ThucPham : HangHoa
     {
         private string NhaCungCap;
         private DateTime _ngaySanXuat;
@@ -16,13 +16,13 @@ namespace BTVN.Bai6
                 DateTime val = value;
                 if (val == default(DateTime))
                 {
-                    val= DateTime.Now;
+                    val = DateTime.Now;
                 }
                 if (val > DateTime.Now)
                 {
                     throw new ArgumentException("Ngày sản xuất không được lớn hơn ngày hiện tại.");
                 }
-                
+
                 this._ngaySanXuat = val;
             }
         }
@@ -51,9 +51,9 @@ namespace BTVN.Bai6
             this.Ngaysanxuat = ngaysanxuat;
             this.Ngayhethan = ngayhethan;
         }
-        protected override string mucdobanbuon()
+        public override string mucdobanbuon()
         {
-            if (this.Soluongton>0 && this.Ngayhethan<DateTime.Now)
+            if (this.Soluongton > 0 && this.Ngayhethan < DateTime.Now)
             {
                 return "khó bán";
             }
@@ -65,6 +65,15 @@ namespace BTVN.Bai6
         protected override double VAT()
         {
             return 0.05;
+        }
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Nhà cung cấp: {this.NhaCungCap}");
+            Console.WriteLine($"Ngày sản xuất: {this.Ngaysanxuat.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Ngày hết hạn: {this.Ngayhethan.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Mức độ bán buôn: {this.mucdobanbuon()}");
+            Console.WriteLine($"VAT: {this.VAT() * 100}%");
         }
     }
 }

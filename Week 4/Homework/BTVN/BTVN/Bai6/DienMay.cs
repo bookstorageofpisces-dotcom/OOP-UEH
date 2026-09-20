@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BTVN.Bai6
 {
-    internal class DienMay : HangHoa
+    public class DienMay : HangHoa
     {
         private double _tgbh;
         private double Tgbh
@@ -38,7 +38,7 @@ namespace BTVN.Bai6
             this.Tgbh = tgbh;
             this.Congsuat = congsuat;
         }
-        protected override string mucdobanbuon()
+        public override string mucdobanbuon()
         {
             if (this.Soluongton < 3)
             {
@@ -52,6 +52,14 @@ namespace BTVN.Bai6
         protected override double VAT()
         {
             return 0.1;
+        }
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Thời gian bảo hành: {this.Tgbh} tháng");
+            Console.WriteLine($"Công suất: {this.Congsuat} W");
+            Console.WriteLine($"Mức độ bán buôn: {this.mucdobanbuon()}");
+            Console.WriteLine($"VAT: {this.VAT() * 100}%");
         }
     }
 }
