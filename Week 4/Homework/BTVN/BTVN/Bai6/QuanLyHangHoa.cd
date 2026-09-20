@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BTVN.Bai6.HangHoa">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAIAAAAAAAAAAIAQIAAAAAAUAACAAACAAAAA=</HashCode>
+      <FileName>Bai6\HangHoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai6.ThucPham">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgEABAAAQAAAAAAAAAAAAAAAAAQAAAAABIAAAAA=</HashCode>
+      <FileName>Bai6\ThucPham.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai6.DienMay">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgAAAAAACAAAAAAAgAAAAAAAAAQAAAAAAAAAAIA=</HashCode>
+      <FileName>Bai6\DienMay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai6.SanhSu">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAgAAAEAAAAAAAAQAAAEAAAAAAAA=</HashCode>
+      <FileName>Bai6\SanhSu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTVN.Bai6.DanhSachHangHoa">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Bai6\DanhSachHangHoa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="danhsachhanghoa" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
