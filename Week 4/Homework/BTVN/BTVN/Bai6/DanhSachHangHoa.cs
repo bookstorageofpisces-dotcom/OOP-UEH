@@ -7,11 +7,14 @@ namespace BTVN.Bai6
     public class DanhSachHangHoa
     {
         private HangHoa[] danhsachhanghoa;
+        private string tenDanhSach;
         private int count;
-        public DanhSachHangHoa(int size)
+        public DanhSachHangHoa(string TenDanhSach, int size)
         {
+            this.tenDanhSach = TenDanhSach;
             danhsachhanghoa = new HangHoa[size];
-            count = 0;
+            this.count = 0;
+            ListQuanLy.Instance.Add(this);
         }
         public bool Add(HangHoa hanghoa)
         {

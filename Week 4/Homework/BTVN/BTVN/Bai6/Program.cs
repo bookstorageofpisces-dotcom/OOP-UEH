@@ -8,20 +8,11 @@ namespace BTVN.Bai6
     {
         static void Main(string[] args)
         {
-            //Dữ liệu hàng hoá mẫu:
-            ThucPham tp1 = new ThucPham("TP0001", "Thịt heo", 100000, 50, "DoMiXi", DateTime.Now, new DateTime(2026,10,20));
-            ThucPham tp2 = new ThucPham("TP0002", "Thịt bò", 200000, 30, "DoMiXi", DateTime.Now, new DateTime(2026, 10, 20));
-            ThucPham tp3 = new ThucPham("TP0003", "Thịt gà", 150000, 20, "DoMiXi", DateTime.Now, new DateTime(2026, 10, 20));
-            SanhSu ss1= new SanhSu("SS0001", "Bình Hoa",2500000, 10, "LGBT", DateTime.Now);
-            SanhSu ss2 = new SanhSu("SS0002", "Bát Gốm", 250000, 5, "LGBT", DateTime.Now);
-            SanhSu ss3 = new SanhSu("SS0003", "Đĩa Gốm", 150000, 15, "LGBT", DateTime.Now);
-            DienMay dd1 = new DienMay("DM0001", "Tivi", 10000000, 5, 24, 100);
-            DienMay dd2 = new DienMay("DM0002", "Tủ Lạnh", 15000000, 3, 36, 200);
-            DienMay dd3 = new DienMay("DM0003", "Máy Giặt", 12000000, 2, 12, 150);
-            DanhSachHangHoa danhSachHangHoa = null;
+            
             do
             {
                 Console.WriteLine("--------------------MENU-------------------");
+                Console.WriteLine("0.Khởi tạo hàng hoá");
                 Console.WriteLine("1.Khởi tạo danh sách hàng hóa");
                 Console.WriteLine("2.Thêm hàng hóa vào danh sách");
                 Console.WriteLine("3.Hiển thị thông tin tất cả hàng hóa");
@@ -39,15 +30,13 @@ namespace BTVN.Bai6
                 {
                     case "11":
                         return;
+                    case "0":
+                        break;
                     case "1":
-                        Console.WriteLine("Nhập số lượng hàng hóa tối đa: ");
-                        int size = int.Parse(Console.ReadLine());
-                        danhSachHangHoa = new DanhSachHangHoa(size);
                         break;
                     case "2":
                         break;
                     case "3":
-                        danhSachHangHoa.DisplayAllProductInfo();
                         break;
                 }
             }

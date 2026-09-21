@@ -37,6 +37,7 @@ namespace BTVN.Bai6
         {
             this.Tgbh = tgbh;
             this.Congsuat = congsuat;
+            ListQuanLy.Instance.Add(this);
         }
         public override string mucdobanbuon()
         {

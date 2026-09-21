@@ -50,6 +50,7 @@ namespace BTVN.Bai6
             this.NhaCungCap = nhacungcap;
             this.Ngaysanxuat = ngaysanxuat;
             this.Ngayhethan = ngayhethan;
+            ListQuanLy.Instance.Add(this);
         }
         public override string mucdobanbuon()
         {
