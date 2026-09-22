@@ -7,14 +7,61 @@ namespace BTVN.Bai6
     public class DanhSachHangHoa
     {
         private HangHoa[] danhsachhanghoa;
-        private string tenDanhSach;
-        private int count;
-        public DanhSachHangHoa(string TenDanhSach, int size)
+        private string _maDanhSach;
+        private string MaDanhSach 
         {
-            this.tenDanhSach = TenDanhSach;
+            get { return this._maDanhSach;} 
+            set
+            {
+                if(string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Mã Danh Sách không được để trống");
+                }
+                else
+                {
+                    this._maDanhSach = value;
+                }
+            } 
+        }
+        private string _tenDanhSach;
+        private string TenDanhSach
+        {
+            get{ return this._tenDanhSach;}
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Tên Danh Sach không được để trống");
+                }
+                else
+                {
+                    this._tenDanhSach = value;
+                }
+            }
+        }
+        private int count;
+        public DanhSachHangHoa(string madanhsach,string TenDanhSach, int size)
+        {
+            this.MaDanhSach = madanhsach;
+            this.TenDanhSach = TenDanhSach;
             danhsachhanghoa = new HangHoa[size];
             this.count = 0;
             ListQuanLy.Instance.Add(this);
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj is DanhSachHangHoa danhsach)
+            {
+                return this.MaDanhSach == danhsach.MaDanhSach;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public override int GetHashCode()
+        {
+            return this.MaDanhSach.GetHashCode();
         }
         public bool Add(HangHoa hanghoa)
         {

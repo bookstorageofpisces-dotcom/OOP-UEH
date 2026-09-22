@@ -18,13 +18,33 @@ namespace BTVN.Bai6
         {
             if (obj is DanhSachHangHoa danhsach)
             {
-                ListDanhSach.Add(danhsach);
-                return true;
+                foreach(DanhSachHangHoa var in ListDanhSach)
+                {
+                    if (danhsach.Equals(var))
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        ListDanhSach.Add(danhsach);
+                        return true;
+                    }
+                }
             }
             if (obj is HangHoa hanghoa)
             {
-                ListHangHoa.Add(hanghoa);
-                return true;
+                foreach(HangHoa var in ListHangHoa)
+                {
+                    if(hanghoa.Equals(var))
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        ListHangHoa.Add(hanghoa);
+                        return true;
+                    }    
+                }
             }
             return false;
         }
